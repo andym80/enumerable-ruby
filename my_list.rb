@@ -1,5 +1,7 @@
-require_relative 'my_enumerable'
+# frozen_string_literal: true
 
+require_relative 'my_enumerable'
+# a class to evaluate enumerable
 class MyList
   include MyEnumerable
   attr_reader :list
@@ -8,7 +10,7 @@ class MyList
     @list = list
   end
 
-  def my_each()
+  def my_each
     (0...@list.length).each { |item| yield @list[item] }
   end
 end
