@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Enumerable module to check if all, any and filter work
 module MyEnumerable
   def all?
